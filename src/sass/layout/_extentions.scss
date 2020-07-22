@@ -1,0 +1,37 @@
+
+
+.extentions {
+
+    text-align: center;
+    margin-bottom: 20rem;
+
+
+
+
+    .extentions__text {
+        width: 40%;
+        margin: 0 auto;
+    }
+
+    .extentions__container {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        margin-top: 10rem;
+        
+    }
+
+    .card-1 {
+        transform: translateY(-3.5rem);
+    }
+    .card-2 {
+
+    }
+    .card-3 {
+        transform: translateY(3.5rem);
+    }
+
+
+
+
+}

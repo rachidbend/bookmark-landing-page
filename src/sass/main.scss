@@ -1,3 +1,29 @@
-body {
-    color: seagreen;
-}
+@import "abstracts/variables";
+@import "abstracts/mixins";
+
+
+@import "base/reset";
+@import "base/typography";
+
+@import 'layout/header';
+@import 'layout/hero';
+@import 'layout/features';
+@import 'layout/extentions';
+@import 'layout/questions';
+@import 'layout/contact';
+@import 'layout/footer';
+
+@import "components/navigation";
+@import "components/buttons";
+@import "components/headings";
+@import "components/slides";
+@import "components/card";
+@import "components/question";
+
+
+
+@import 'pages/home';
+
+
+
+

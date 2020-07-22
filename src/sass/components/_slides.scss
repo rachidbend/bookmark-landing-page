@@ -1,0 +1,92 @@
+
+
+
+.slides {
+
+    position: relative;
+    
+
+
+    .slide {
+        &__control {
+            display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+
+        margin-bottom: 6rem;
+        }
+        
+
+        &__ctrl {
+            border: none;
+            background-color: $color-white;
+            color: rgba($color-black, .7);
+            padding: 3rem 5rem;
+            font-size: 1.8rem;
+            border-bottom: 1px solid rgba($color-secondary-gray, .6);
+            font-weight: 500;
+            letter-spacing: 1px;
+
+            &:hover {
+                color: $color-primary-red;
+                outline: none;
+            }
+
+            &:active,
+            &:focus {
+                border: none;
+                outline: none;
+                border-bottom: 4px solid $color-primary-red;
+            }
+        }
+    }
+
+    &__container {
+        height: 45rem;
+        
+
+        .slide {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            align-items: center;
+            position: absolute;
+
+            &__ill {
+                
+            }   
+
+            &__content {
+                width: 40%; 
+
+
+                &__text {
+                    margin-bottom: 3rem;
+                }
+            }
+        }
+
+        #slide-1 {
+            left: 0;
+        }
+        #slide-2 {
+            left: 100%;
+        }
+        #slide-3 {
+            left: 200%;
+        }
+
+
+
+    }
+
+    .features__background {
+        position: absolute;
+        z-index: -1;
+        transform: rotate(180deg);
+        height: 500px;
+        width: auto;
+        left: -30rem;
+        bottom: 0rem;
+    }
+}

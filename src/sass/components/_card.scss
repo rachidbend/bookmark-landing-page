@@ -1,0 +1,39 @@
+
+
+.card {
+
+    box-shadow:  0 1.5rem 1.2rem rgba($color-primary-blue, .1);
+    display: inline-block;
+    width: 28rem;
+    height: auto;
+    padding: 2.5rem 1.5rem;
+    padding-top: 3.5rem;
+    border-radius: 2rem;
+    margin: 1.8rem;
+    overflow: hidden;
+    text-align: center;
+
+    .card__icon {
+        margin-bottom: 2.5rem;
+        
+    }
+
+    .heading--tertiary {
+        
+    }
+
+    .card__text {
+        font-size: 1.5rem;
+        margin-bottom: 3rem;
+    }
+
+    .card__dots {
+        margin-bottom: 1.8rem;
+        margin-left: -1.5rem;
+    }
+
+    .heading--tertiary {
+        margin-bottom: 1rem;
+    }
+
+}

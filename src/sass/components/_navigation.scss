@@ -1,0 +1,39 @@
+
+
+.nav {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: 1.4rem;
+    
+
+
+    ul {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+        margin-right: 5rem;
+
+        li {
+            list-style: none;
+            padding: 2rem;
+
+            a {
+                color: $color-secondary-blue;
+                text-decoration: none;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                transition: all .2s;
+                padding: .5rem;
+
+                &:hover {
+                    color: $color-primary-red;
+                }
+            }    
+        }       
+    }
+}
+
+

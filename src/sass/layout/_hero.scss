@@ -1,0 +1,40 @@
+
+
+.hero {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10rem;
+    position: relative;
+    
+    margin-bottom: 15rem;
+
+    &__content {
+        max-width: 50rem;
+
+        .btn__container {
+            margin-top: 2.5rem;
+
+            .btn--blue {
+                margin-right: 2rem;
+            }
+        }
+    }
+
+
+    &__illustration {
+
+        transform: translateX(10rem);
+    }
+
+
+    .hero__background {
+        height: 600px;
+        width: auto;
+        position: absolute;
+        z-index: -1;
+        right: -50rem;
+        bottom: -20rem;
+    }
+}

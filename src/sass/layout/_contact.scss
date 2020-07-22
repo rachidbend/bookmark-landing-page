@@ -1,0 +1,52 @@
+
+
+.contact {
+
+    background-color: $color-primary-blue;
+    padding: 7rem 0;
+    text-align: center;
+    margin: 0 -30rem;
+    color: $color-white;
+
+    &__text {
+        font-weight: 400;
+        font-size: 1.3rem;
+        margin-bottom: 3.5rem;
+        text-transform: uppercase;
+        letter-spacing: .5rem;
+    }
+
+    &__heading {
+        color: $color-white;
+
+        margin: 0 auto;
+        text-transform: unset;
+        font-size: 3.2rem;
+        font-weight: 500;
+        margin-bottom: 3.6rem;
+    }
+
+    &__form {
+
+        .form__email {
+            font-family: 'Rubik', sans-serif;
+            height: 2rem;
+            width: 30rem;
+            font-size: 1.6rem;
+            padding: 2.3rem;
+            border: none;
+            border-radius: .5rem;
+            margin-right: 1.4rem;
+
+            &::placeholder {
+                font-family: 'Rubik', sans-serif;
+                color: rgba($color-secondary-gray, .4);
+            }
+           
+            &:focus,
+            &:active {
+                outline: none;
+            }
+        }
+    }
+}

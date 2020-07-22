@@ -1,0 +1,88 @@
+.btn {
+    
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 500;
+    color: $color-white;
+    font-size: 1.6rem;
+    padding: 1.3rem 3.1rem;
+    border: none;
+    border-radius: .5rem;
+    box-shadow: $box-shadow-light;
+    transition: $transition-small;
+    backface-visibility: hidden;
+
+    &:hover {
+        background-color: $color-white;
+    }
+
+    &:active {
+        transform: translateY(2px);
+    }
+
+    &__login {
+
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        background-color: $color-primary-red;
+        font-size: 1.4rem;
+        border: 2px solid $color-primary-red;
+        font-weight: 500;
+        color: $color-white;
+    
+        &:hover {
+            color: $color-primary-red;
+        }
+    }
+    
+
+    &--blue {
+        background-color: $color-primary-blue;
+        transition: $transition-small;
+        border: 2px solid $color-primary-blue;
+        font-size: 1.4rem;
+        font-weight: 400;
+    
+        &:hover {
+            border: 2px solid $color-primary-blue;
+            background-color: $color-white;
+            color: $color-primary-blue;
+        }
+    
+    }
+
+    &--gray {
+        background-color: rgba($color-secondary-gray, .1);
+        color: $color-secondary-gray;
+        border: 2px solid rgba($color-secondary-gray, .01);
+    
+        &:hover {
+            background-color: $color-white;
+            border: 2px solid $color-secondary-gray;
+        }
+    }
+
+    &--contact {
+        background-color: $color-primary-red;
+        color: $color-white;
+        border: 2px solid $color-primary-red;
+        transition: all .2s;
+        font-size: 1.4rem;
+        font-family: 'Rubik', sans-serif;
+        padding: 1.4rem 2rem;
+
+        &:hover {
+            color: $color-primary-red;
+            background-color: $color-white;
+        
+        }
+
+    }
+
+    &--info {
+        padding: 1.3rem 2rem;
+
+    }
+
+}
+

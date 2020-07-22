@@ -1,0 +1,20 @@
+
+
+.header {
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 50px;
+
+
+    .logo {
+        justify-self: flex-start;
+    }
+
+}
+
+
+
