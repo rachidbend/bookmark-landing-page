@@ -69,16 +69,17 @@
           Your bookmarks sync between your devices so you can access them on the go.
         </p>
       </div>
-      <div class="features_slides slides">
-        <img src="images/background.svg" alt="" class="features__background">
+      <img src="images/background.svg" alt="" class="features__background">
+
+      <div class="features_slides slides">      
         <div class="slide__control">
-          <button class="slide__ctrl">Simple Bookmarking</button>
-          <button class="slide__ctrl">Speedy Searching</button>
-          <button class="slide__ctrl">Easy Sharing</button>
+          <button class="slide__ctrl active" id="ctrl-1">Simple Bookmarking</button>
+          <button class="slide__ctrl" id="ctrl-2">Speedy Searching</button>
+          <button class="slide__ctrl" id="ctrl-3">Easy Sharing</button>
         </div>
         <div class="slides__container">
           <!-- ------------------- SLIDE 1 ----------------------- -->
-            <div class="slide" id="slide-1">
+            <div class="slide slide-item" id="slide-1">
               <div class="slide__ill">
                 <img src="images/illustration-features-tab-1.svg" alt="" id="slide-1">
               </div>
@@ -92,7 +93,7 @@
               </div>
             </div>
           <!-- ------------------- SLIDE 2 ----------------------- -->
-            <div class="slide" id="slide-2">
+            <div class="slide slide-item" id="slide-2">
               <div class="slide__ill">
                 <img src="images/illustration-features-tab-2.svg" alt="" id="slide-2">
               </div>
@@ -106,7 +107,7 @@
               </div>
             </div>
           <!-- ------------------- SLIDE 3 ----------------------- -->
-            <div class="slide" id="slide-3">
+            <div class="slide slide-item" id="slide-3">
               <div class="slide__ill">
                 <img src="images/illustration-features-tab-3.svg" alt="" id="slide-3">
               </div>
@@ -227,7 +228,7 @@
 
       <a href="#" class="btn btn--blue btn--info">More info</a>
     </section>
-
+  </div>
     <section class="contact">
       <p class="contact__text">35,000+ already joined</p>
       <h2 class="heading heading--secondary contact__heading">Stay up-to-date with what <br> we’re doing</h2>
@@ -237,7 +238,7 @@
       </form>
     </section>
 
-  </div>
+  
     <footer class="footer">
       <div class="footer__content">
           <div class="logo">

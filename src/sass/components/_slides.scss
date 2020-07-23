@@ -4,8 +4,9 @@
 .slides {
 
     position: relative;
-    
-
+    overflow: hidden;
+    width: 110rem;
+    margin: 0 auto;
 
     .slide {
         &__control {
@@ -26,6 +27,7 @@
             border-bottom: 1px solid rgba($color-secondary-gray, .6);
             font-weight: 500;
             letter-spacing: 1px;
+            transition: color .2s;
 
             &:hover {
                 color: $color-primary-red;
@@ -34,16 +36,15 @@
 
             &:active,
             &:focus {
-                border: none;
                 outline: none;
-                border-bottom: 4px solid $color-primary-red;
+
             }
         }
     }
 
     &__container {
         height: 45rem;
-        
+        margin: 0 auto;
 
         .slide {
             display: flex;
@@ -59,15 +60,14 @@
             &__content {
                 width: 40%; 
 
-
-                &__text {
+                .slide__text {
                     margin-bottom: 3rem;
                 }
             }
         }
 
         #slide-1 {
-            left: 0;
+            left: 0%;
         }
         #slide-2 {
             left: 100%;
@@ -80,13 +80,8 @@
 
     }
 
-    .features__background {
-        position: absolute;
-        z-index: -1;
-        transform: rotate(180deg);
-        height: 500px;
-        width: auto;
-        left: -30rem;
-        bottom: 0rem;
+    .active {
+        border-bottom: 4px solid $color-primary-red;
     }
+
 }
