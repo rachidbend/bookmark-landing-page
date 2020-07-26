@@ -20,7 +20,7 @@
 
         li {
             list-style: none;
-            padding: 2rem;
+            padding: 1.5rem;
 
             a {
                 color: $color-secondary-blue;
@@ -28,7 +28,7 @@
                 text-transform: uppercase;
                 letter-spacing: 2px;
                 transition: all .2s;
-                padding: .5rem;
+                padding: .4rem;
 
                 &:hover {
                     color: $color-primary-red;

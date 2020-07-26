@@ -42,8 +42,11 @@
         margin-left: 5rem;
 
         img {
-            width: 120%;
+            width: 100%;
 
+            @include respond(tab-land) {
+                width: 120%;
+            }
             @include respond(tab-port) {
                 width: 100%;
             }

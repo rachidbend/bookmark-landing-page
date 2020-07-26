@@ -13,9 +13,17 @@
     overflow: hidden;
     text-align: center;
 
+    @include respond(tab-land) {
+        width: 25rem;
+    }
+
+    img {
+        width: 100%;
+    }
+
     .card__icon {
         margin-bottom: 2.5rem;
-        
+        width: 12rem;
     }
 
     .heading--tertiary {

@@ -7,7 +7,7 @@
     position: absolute;
     z-index: -1;
     right: 0px;
-    top: 35rem;
+    top: 33rem;
     overflow: hidden;
 
      .circle {
@@ -39,9 +39,9 @@
 
       @include respond(tab-land) {
         height: 200px;
-        width: 35vw;
+        width: 38vw;
         right: 0px;
-        top: 32rem;
+        top: 31rem;
 
   
       }
@@ -51,15 +51,22 @@
 
 .features__background {
         height: 300px;
-        width: 55rem;
+        width: 30vw;
         position: absolute;
         z-index: -1;
-        bottom: 0rem;
-        right: 0;
+        top: 50rem;
+        left: 0rem;
         // transform: rotate(180deg);
 
+        @include respond(tab-land) {
+          height: 300px;
+          top: 40rem;
+          left: 0rem;
+          width: 30rem;
+        }
+
         @include respond(big-desktop) {
-          bottom: 10rem;
+          top: 50rem;
           width: 45rem;
         }
 
@@ -70,6 +77,11 @@
             display: block;
             border-radius: 50%;
             position: absolute;
+
+            @include respond(tab-land) {
+              width: 200px;
+              height: 200px;
+            }
           }
           .rectangle {
             width: 2000px;
@@ -77,5 +89,10 @@
             background-color: hsl(231, 69%, 60%);
             position: absolute;
             left: 150px;
+
+            @include respond(tab-land) {
+              left: 100px;
+              height: 200px;
+            }
           }
 }

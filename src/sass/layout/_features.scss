@@ -5,9 +5,9 @@
     margin-bottom: 10rem;
     position: relative;
 
-    @include respond(tab-land) {
-        display: none;
-    }
+    // @include respond(tab-land) {
+    //     display: none;
+    // }
 
     &__desc {
         width: 42%;

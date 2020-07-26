@@ -5,7 +5,7 @@
 
     position: relative;
     overflow: hidden;
-    width: 110rem;
+    max-width: 110rem;
     margin: 0 auto;
 
     .slide {
@@ -46,6 +46,9 @@
         height: 45rem;
         margin: 0 auto;
 
+        @include respond(tab-land) {
+            margin: 0 5rem;
+        }
         .slide {
             display: flex;
             flex-flow: row nowrap;
@@ -53,12 +56,27 @@
             align-items: center;
             position: absolute;
 
-            &__ill {
+            @include respond(tab-land) {
+                justify-content: space-around;
                 
+            }
+
+            &__ill {
+                img {
+                    width: 100%;
+                }
+
+                @include respond(tab-land) {
+                    width: 45rem;
+                }
             }   
 
             &__content {
                 width: 40%; 
+
+                @include respond(tab-land) {
+                    width: 35%;
+                }
 
                 .slide__text {
                     margin-bottom: 3rem;
