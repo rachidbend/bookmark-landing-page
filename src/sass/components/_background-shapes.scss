@@ -1,0 +1,81 @@
+
+
+
+.hero__background {
+    height: 400px;
+    width: 40vw;
+    position: absolute;
+    z-index: -1;
+    right: 0px;
+    top: 35rem;
+    overflow: hidden;
+
+     .circle {
+        width: 360px;
+        height: 360px;
+        background-color: hsl(231, 69%, 60%);
+        display: block;
+        border-radius: 50%;
+        position: absolute;
+
+        @include respond(tab-land) {
+          width: 200px;
+          height: 200px;
+        }
+      }
+      .rectangle {
+        width: 8000px;
+        height: 360px;
+        background-color: hsl(231, 69%, 60%);
+        position: absolute;
+        left: 180px;
+
+        @include respond(tab-land) {
+          width: 8000px;
+          height: 200px;
+          left: 100px;
+        }
+      }
+
+      @include respond(tab-land) {
+        height: 200px;
+        width: 35vw;
+        right: 0px;
+        top: 32rem;
+
+  
+      }
+}
+
+
+
+.features__background {
+        height: 300px;
+        width: 55rem;
+        position: absolute;
+        z-index: -1;
+        bottom: 0rem;
+        right: 0;
+        // transform: rotate(180deg);
+
+        @include respond(big-desktop) {
+          bottom: 10rem;
+          width: 45rem;
+        }
+
+        .circle {
+            width: 300px;
+            height: 300px;
+            background-color: hsl(231, 69%, 60%);
+            display: block;
+            border-radius: 50%;
+            position: absolute;
+          }
+          .rectangle {
+            width: 2000px;
+            height: 300px;
+            background-color: hsl(231, 69%, 60%);
+            position: absolute;
+            left: 150px;
+          }
+}

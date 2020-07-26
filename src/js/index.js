@@ -91,3 +91,59 @@ const slides = () => {
 
 questionLabel();
 slides();
+
+
+function emailErrorAdd ()  {
+    document.querySelector('.form__email').classList.add('email--error');
+    document.querySelector('.email__label').classList.add('label--error');
+    document.querySelector('.email__error').classList.add('error--error');
+}
+
+function emailErrorRemove ()  {
+    document.querySelector('.form__email').classList.remove('email--error');
+    document.querySelector('.email__label').classList.remove('label--error');
+    document.querySelector('.email__error').classList.remove('error--error');
+}
+
+
+const form = document.querySelector('.contact__form');
+const email = document.querySelector('.form__email');
+const errorMessage = document.querySelector('.email__label');
+let correctFormat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+
+
+
+
+form.addEventListener('submit', e => {
+    let messages = [];
+    emailErrorRemove();
+    if (email.value === '' || email.value === null) {
+        messages.push('Email is required');
+    }
+    if (!email.value.includes('@')) {
+        messages.push('you have to include @');
+    }
+    if (!(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email.value))) {
+        messages.push('the email is formatted incorectly');
+    }
+    if (messages.length > 0) {
+        emailErrorAdd();
+        e.preventDefault();
+        errorMessage.innerText = messages.join(', ');
+    }
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -8,7 +8,9 @@
 
     font-size: 1.4rem;
     
-
+    @include respond(tab-land) {
+        font-size: 1.2rem;
+    }
 
     ul {
         display: flex;
@@ -34,6 +36,12 @@
             }    
         }       
     }
+
+    @include respond(tab-port) {
+            display: none;
+    }
 }
 
-
+.header__nav {
+    margin-right: 5rem;
+} 

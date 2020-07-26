@@ -27,9 +27,15 @@
     }
 
     &__form {
+        display: flex;
+        justify-content: center;
+
+        .email__container {
+            position: relative;
+        }
 
         .form__email {
-            font-family: 'Rubik', sans-serif;
+            font-family: $font-main;
             height: 2rem;
             width: 30rem;
             font-size: 1.6rem;
@@ -37,9 +43,12 @@
             border: none;
             border-radius: .5rem;
             margin-right: 1.4rem;
-
+            z-index: 1000;
+            position: relative;
+            transition: all .2s;
+            
             &::placeholder {
-                font-family: 'Rubik', sans-serif;
+                font-family: $font-main;
                 color: rgba($color-secondary-gray, .4);
             }
            
@@ -47,6 +56,48 @@
             &:active {
                 outline: none;
             }
+            
+        }
+        .email__label {
+            position: absolute;
+            top: 35px;
+            left: 0;
+            background-color: $color-primary-red;
+            width: 30rem;
+            padding: .8rem .5rem;
+            padding-top: 1rem;
+            font-size: 1.2rem;
+            text-align: left;
+            // border-radius: .5rem;
+            border-bottom-left-radius: .5rem;
+            border-bottom-right-radius: .5rem;
+            visibility: hidden;
+            transition: top .2s;
+        }
+
+        .email--error {
+            border-top: 2px solid $color-primary-red;
+            border-left: 2px solid $color-primary-red;
+            border-right: 2px solid $color-primary-red;
+        }
+
+        .label--error {
+            visibility: visible;
+            top: 45px;
+        }
+
+        .email__error {
+            position: absolute;
+            right: 25px;
+            top: 15px;
+            display: none;
+            z-index: 9999;
+            transition: all .2s;
+        }
+
+        .error--error {
+            display: block;
+
         }
     }
 }

@@ -3,15 +3,29 @@
 .hero {
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     margin-top: 10rem;
     position: relative;
     
     margin-bottom: 15rem;
 
+
+    @include respond(tab-port) {
+        flex-direction: column-reverse;
+    }
+
     &__content {
         max-width: 50rem;
+        
+        @include respond(tab-land) {
+            max-width: 40rem;
+        }
+
+        @include respond(tab-port) {
+            text-align: center;
+            
+        }
 
         .btn__container {
             margin-top: 2.5rem;
@@ -24,17 +38,30 @@
 
 
     &__illustration {
+        max-width: 100%;
+        margin-left: 5rem;
 
-        transform: translateX(10rem);
+        img {
+            width: 120%;
+
+            @include respond(tab-port) {
+                width: 100%;
+            }
+        }
+
+        @include respond(tab-land) {
+            margin-left: 1rem;
+        }
+
+        @include respond(tab-port) {
+            max-width: 80%;
+        }
     }
 
 
-    .hero__background {
-        height: 600px;
-        width: auto;
-        position: absolute;
-        z-index: -1;
-        right: -50rem;
-        bottom: -20rem;
-    }
+    
 }
+
+
+
+

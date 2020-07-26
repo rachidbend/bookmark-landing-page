@@ -17,6 +17,13 @@
 </head>
 <body>
 
+    <!-- ------------------------------------------------------------
+    -----------------------------HEADER-------------------------------
+    -------------------------------------------------------------- -->
+    <div class="hero__background">
+      <div class="circle"></div>
+      <div class="rectangle"></div>
+    </div>
   <div class="body__container">
     <header class="header">
       <div class="logo">
@@ -39,11 +46,17 @@
         </ul>
         <a class="btn btn__login">login</a>
       </nav>
-      
+      <div class="header__burger">
+        <img src="images/icon-hamburger.svg" alt="burger menu">
+      </div>
     </header>
 
+    <!-- ---------------------------------------------------------------
+    -----------------------------HERO-----------------------------------
+    ---------------------------------------------------------------- -->
     <section class="hero" id="hero">
-      <img src="images/background.svg" alt="" class="hero__background">
+      <!-- <img src="images/background.svg" alt="" class="hero__background"> -->
+      
       <div class="hero__content">
 
         <h1 class="hero__heading heading heading--primary">a simple bookmark manager</h1>
@@ -61,7 +74,14 @@
       </div>
     </section>
 
+    <!-- ---------------------------------------------------------------
+    -----------------------------FEATURES-------------------------------
+    ---------------------------------------------------------------- -->
     <section class="features" id="features">
+      <div class="features__background">
+        <div class="circle"></div>
+        <div class="rectangle"></div>
+
       <div class="features__desc">   
         <h2 class="heading heading--secondary">Features</h2>
         <p class="features__text text">
@@ -69,8 +89,7 @@
           Your bookmarks sync between your devices so you can access them on the go.
         </p>
       </div>
-      <img src="images/background.svg" alt="" class="features__background">
-
+      </div>
       <div class="features_slides slides">      
         <div class="slide__control">
           <button class="slide__ctrl active" id="ctrl-1">Simple Bookmarking</button>
@@ -124,7 +143,11 @@
       </div>
     </section>
 
+    <!-- --------------------------------------------------------------
+    -----------------------------EXTENTIONS----------------------------
+    --------------------------------------------------------------- -->
     <section class="extentions" id="extentions">
+      
       <h2 class="heading heading--secondary">Download the extension</h2>
       <p class="extentions__text text">
         We’ve got more browsers in the pipeline. Please do let us know if you’ve
@@ -160,6 +183,9 @@
       </div>
     </section>
 
+    <!-- ---------------------------------------------------------------
+    -----------------------------QUESTIONS------------------------------
+    ---------------------------------------------------------------- -->
     <section class="questions">
       <h2 class="heading heading--secondary">Frequently Asked Questions</h2>
       <p class="questions__text text">
@@ -227,18 +253,28 @@
       </div>
 
       <a href="#" class="btn btn--blue btn--info">More info</a>
+    <!-- ---------------------------------------------------------------
+    -----------------------------CONTACT--------------------------------
+    ---------------------------------------------------------------- -->
     </section>
   </div>
     <section class="contact">
       <p class="contact__text">35,000+ already joined</p>
       <h2 class="heading heading--secondary contact__heading">Stay up-to-date with what <br> we’re doing</h2>
+      
       <form action="#" class="contact__form form">
-        <input type="email" id="email" class="form__email" placeholder="Enter your email address">
+        <div class="email__container">
+          <input type="email" id="email" class="form__email email " placeholder="Enter your email address">
+          <label for="email" class="email__label ">Whoops, make sure it's an email</label>
+          <img src="images/icon-error.svg" alt="" class="email__error ">
+        </div>
         <input type="submit" value="Contact Us" class="btn btn--contact" >
       </form>
     </section>
-
-  
+    
+    <!-- ---------------------------------------------------------------
+    -----------------------------FOOTER---------------------------------
+    ---------------------------------------------------------------- -->
     <footer class="footer">
       <div class="footer__content">
           <div class="logo">

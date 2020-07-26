@@ -10,7 +10,13 @@
     border-radius: .5rem;
     box-shadow: $box-shadow-light;
     transition: $transition-small;
-    backface-visibility: hidden;
+    // backface-visibility: hidden;
+    cursor: pointer;
+
+    @include respond(tab-land) {
+        font-size: 1.5rem;
+        padding: 1rem 2.6rem;
+    }
 
     &:hover {
         background-color: $color-white;
