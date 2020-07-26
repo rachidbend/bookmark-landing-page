@@ -105,6 +105,10 @@
                 @include respond(tab-land) {
                     max-width: 45rem;
                 }
+
+                @include respond(phone) {
+                    max-width: 35rem;
+                }
             }   
 
             &__content {
