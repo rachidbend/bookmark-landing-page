@@ -10,10 +10,18 @@
     width: 100vw;
     background-color: $color-secondary-blue;
 
+    @include respond(phone) {
+        flex-direction: column;
+    }
+
     &__content {
         display: flex;
         flex-flow: row nowrap;
         align-items: center;
+
+        @include respond(phone) {
+            flex-direction: column;
+        }
 
     }
 
@@ -29,6 +37,11 @@
 
     .logo {
         margin-right: 5rem;
+        @include respond(phone) {
+            margin: 0;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
     }
 
     &__nav {
@@ -38,6 +51,21 @@
             font-size: 1.3rem;
             font-weight: 400;
         }
+
+        .nav__nav {
+            @include respond(phone) {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin: 0em;
+                margin-bottom: 2rem;
+            }
+        }
+
+        .nav__link {
+            font-size: 1.6rem;
+        }
+        
     }
 
     .social {
@@ -48,6 +76,11 @@
             color: $color-white;
             transition: all .2s;
 
+            @include respond(phone) {
+                margin: 0;
+                padding: 2rem;
+               
+            }
             &:hover {
                 color: $color-primary-red;
             }

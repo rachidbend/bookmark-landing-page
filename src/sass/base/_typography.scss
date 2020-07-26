@@ -45,6 +45,11 @@ body {
         @include respond(tab-land) {
             font-size: 2.6rem;
         }
+
+        @include respond(phone) {
+            font-size: 3rem;
+        }
+
     }
 
     &--tertiary {

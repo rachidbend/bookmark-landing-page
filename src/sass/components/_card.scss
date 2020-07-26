@@ -17,6 +17,17 @@
         width: 25rem;
     }
 
+    @include respond(tab-port) {
+        width: 35rem;
+    }
+
+    @include respond(phone) {
+        width: 35rem;
+    }
+
+
+    
+
     img {
         width: 100%;
     }

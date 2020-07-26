@@ -77,6 +77,12 @@
         font-family: 'Rubik', sans-serif;
         padding: 1.4rem 2rem;
 
+        @include respond(phone) {
+            width: 30rem;
+            margin: 0 auto;
+            margin-top: 2rem;
+        }
+
         &:hover {
             color: $color-primary-red;
             background-color: $color-white;
@@ -87,7 +93,10 @@
 
     &--info {
         padding: 1.3rem 2rem;
-
+        @include respond(phone) {
+            padding: 1.8rem 2.5rem;
+            font-size: 1.8rem;
+        }
     }
 
 }

@@ -109,8 +109,6 @@ function emailErrorRemove ()  {
 const form = document.querySelector('.contact__form');
 const email = document.querySelector('.form__email');
 const errorMessage = document.querySelector('.email__label');
-let correctFormat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-
 
 
 

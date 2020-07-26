@@ -42,8 +42,16 @@
         width: 38vw;
         right: 0px;
         top: 31rem;
+      }
 
-  
+      @include respond(tab-port) {
+        width: 50vw;
+        top: 35rem;
+      }
+
+      @include respond(phone) {
+        width: 75vw;
+        top: 22rem;
       }
 }
 
@@ -57,6 +65,7 @@
         top: 50rem;
         left: 0rem;
         // transform: rotate(180deg);
+        
 
         @include respond(tab-land) {
           height: 300px;
@@ -70,6 +79,16 @@
           width: 45rem;
         }
 
+        @include respond(tab-port) {
+          top: 52rem;
+          width: 50vw; 
+        }
+
+        @include respond(phone) {
+          top: 46rem;
+          width: 80vw; 
+        }
+
         .circle {
             width: 300px;
             height: 300px;
@@ -78,9 +97,13 @@
             border-radius: 50%;
             position: absolute;
 
+
             @include respond(tab-land) {
               width: 200px;
               height: 200px;
+            }
+            @include respond(tab-port) {
+                
             }
           }
           .rectangle {
@@ -93,6 +116,10 @@
             @include respond(tab-land) {
               left: 100px;
               height: 200px;
+            }
+
+            @include respond(tab-port) {
+                
             }
           }
 }

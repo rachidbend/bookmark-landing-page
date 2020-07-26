@@ -37,11 +37,13 @@
         }       
     }
 
-    @include respond(tab-port) {
-            display: none;
-    }
+    
 }
 
 .header__nav {
     margin-right: 5rem;
+
+    @include respond(tab-port) {
+        display: none;
+    }
 } 
