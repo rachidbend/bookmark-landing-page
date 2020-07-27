@@ -135,7 +135,51 @@ form.addEventListener('submit', e => {
 
 
 
+const mobile = () => {
 
+    const mobileToggleAdd = () => {
+        document.querySelector('.mobile').classList.add('mobile-active');
+        document.querySelector('.mobile__add').parentNode.style.display = 'none';
+    }
+
+    const mobileToggleRemove = () => {
+        document.querySelector('.mobile__add').parentNode.style.display = 'block';
+        document.querySelector('.mobile').classList.remove('mobile-active');
+
+    }
+
+
+
+    // when Hamburger is clicked show the mobile menu
+    document.querySelector('.mobile__add').addEventListener('click', event => {
+        const mobileAdd = event.target.closest('.mobile__add');
+        if (mobileAdd) {
+            mobileToggleAdd();
+        }  
+    })
+
+    // when the Close is clicked remove the nav toggle
+    document.querySelector('.mobile__close').addEventListener('click', event => {
+        const mobileClose = event.target.closest('.mobile__close');
+        if (mobileClose) {
+            mobileToggleRemove();
+        }
+    })
+
+
+    // when one of the items is clicked (nav, social) remove the mobile nav
+
+    document.querySelector('.mobile').addEventListener('click', event => {
+        const mobileLink = event.target.closest('a');
+        if (mobileLink) {
+            mobileToggleRemove();
+        }
+    })
+
+
+}
+
+mobile();
 
 
 
